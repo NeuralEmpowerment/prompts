@@ -1,0 +1,60 @@
+{prompt}
+
+## Requirements
+
+1. Please use yarn to install everything and please provide the yarn commands to install everything with the exact version you are using (ex: yarn add <package>@<version>)
+2. Please provide a final `package.json` (For NodeJS projects) or which lists the proper versions needed for the project. 
+3. Please include the required NodeJS version in `package.json` for NodeJs
+4. Please provide comments at the top of all files provided which shows the path to the file from the root directory
+5. Please a zsh shell script to use in terminal to create the file structure of the application and create blank files for all of the needed files. Provide the commands to be able to run it like: `./create-project-template.sh`
+6. Please add `TODO` comments for all areas of code which need to be implemented. 
+
+## Philosophies
+
+**************************Use **functional programming**, unless object oriented programming is required*
+
+### **Functional** Programming
+
+**Functional programming** is a paradigm that treats computation as the evaluation of mathematical functions and avoids changing state and mutable data. Here are the core tenets of functional programming:
+
+1. **First-Class and Higher-Order Functions**:
+    - Functions are first-class citizens, meaning they can be passed as arguments to other functions, returned as values, and assigned to variables.
+    - Higher-order functions are functions that take one or more functions as arguments, return a function, or both.
+2. **Pure Functions**:
+    - A function is pure if its output is solely determined by its input and has no other side effects (e.g., modifying global variables or printing to the console).
+    - Given the same input, a pure function will always produce the same output.
+3. **Immutability**:
+    - In functional programming, once a data structure is created, it cannot be changed. If you want to make a change, you create a new data structure.
+    - This contrasts with imperative programming, where data structures, such as objects, are often changed directly.
+4. **Statelessness**:
+    - Functional programming avoids maintaining state as much as possible.
+    - Functions ideally should not have any internal state that affects their output.
+5. **Function Composition**:
+    - Complex problems are solved by composing multiple functions together. Each function takes in some input and produces an output.
+    - The output of one function can be used as the input for another function, allowing for a chain or pipeline of functions.
+6. **Recursion**:
+    - Functional programming often favors recursion over looping constructs like `for` and `while`.
+    - Recursive functions call themselves with modified arguments until a base case is reached.
+7. **Referential Transparency**:
+    - An expression is referentially transparent if it can be replaced with its value without changing the program's behavior.
+    - This is closely related to the concept of pure functions. If a function is pure, then its call is referentially transparent.
+8. **Avoid Side Effects**:
+    - Side effects are any changes that a function makes outside of producing its return value. This includes things like modifying a global variable or writing to a file.
+    - In functional programming, side effects are avoided or isolated.
+9. **Lazy Evaluation**:
+    - Lazy evaluation is an evaluation strategy where expressions are only evaluated when their values are actually needed.
+    - This can lead to performance improvements and allows for the definition of infinite data structures.
+10. **Pattern Matching**:
+    - Pattern matching is a mechanism used in some functional programming languages to access the data in data structures.
+    - It provides more readability and can simplify the code.
+
+It’s worth noting that sometimes a pure functional approach might not be the most efficient or straightforward for certain tasks, especially in languages that aren't primarily designed for functional programming. It's always a balance between the paradigm and the specific problem you're trying to solve.
+
+### Object Oriented Programming
+
+1. **********SOLID********** principles of object-oriented programming. In [software engineering](https://en.wikipedia.org/wiki/Software_engineering), **SOLID** is a mnemonic acronym for five design principles intended to make [object-oriented](https://en.wikipedia.org/wiki/Object-oriented) designs more understandable, flexible, and [maintainable](https://en.wikipedia.org/wiki/Software_maintenance). The principles are a subset of many principles promoted by American software engineer and instructor [Robert C. Martin](https://en.wikipedia.org/wiki/Robert_C._Martin),[[1]](https://en.wikipedia.org/wiki/SOLID#cite_note-ub-old-web-solid-1)[[2]](https://en.wikipedia.org/wiki/SOLID#cite_note-ub-solid-2)[[3]](https://en.wikipedia.org/wiki/SOLID#cite_note-metz-presentation-2009-3) first introduced in his 2000 paper *Design Principles and Design Patterns* discussing [software rot](https://en.wikipedia.org/wiki/Software_rot).[[2]](https://en.wikipedia.org/wiki/SOLID#cite_note-ub-solid-2)[[4]](https://en.wikipedia.org/wiki/SOLID#cite_note-martin-design-principles-4).
+    1. The **[S**ingle-responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle): "There should never be more than one reason for a [class](https://en.wikipedia.org/wiki/Class_(computer_programming)) to change." In other words, every class should have only one responsibility.
+    2. The **[O**pen–closed principle](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle): "Software entities ... should be open for extension, but closed for modification."
+    3. The **[L**iskov substitution principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle): "Functions that use pointers or references to base classes must be able to use objects of derived classes without knowing it." See also [design by contract](https://en.wikipedia.org/wiki/Design_by_contract).
+    4. The **[I**nterface segregation principle](https://en.wikipedia.org/wiki/Interface_segregation_principle): "Clients should not be forced to depend upon interfaces that they do not use."
+    5. The **[D**ependency inversion principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle): "Depend upon abstractions, [not] concretions."
