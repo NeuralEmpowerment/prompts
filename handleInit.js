@@ -14,7 +14,7 @@ const handleInit = (args, initFunction) => {
   if (command === 'init') {
     initFunction();
   } else {
-    console.log(`Invalid command. Use "npx ${packageName} init" to initialize.`);
+    console.log(`Invalid command. Use "${packageName} init" or "neural-prompts init" to initialize.`);
   }
 };
 

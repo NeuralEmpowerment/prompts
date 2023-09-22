@@ -4,8 +4,8 @@ Collection of prompts, standards and principles I want to reuse when developing 
 
 
 ## Usage
-
-`npx @neuralempowerment/prompts init`  
+`npm install -g @neuralempowerment/prompts`  
+`neural-prompts init`    
 
 Then in Cursor, you can `@mention` `prompt-...` to pull in these prompts easily.
 
