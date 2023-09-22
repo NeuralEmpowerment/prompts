@@ -1,13 +1,13 @@
 {
   "name": "@neuralempowerment/prompts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Collection of prompts which can be easily added to a NodeJS repo for easy access with Cursor IDE.",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
   "bin": {
-    "prompts": "./index.js"
+    "@neuralempowerment/prompts": "./index.js"
   },
   "license": "GPL-3.0-or-later",
   "keywords": [

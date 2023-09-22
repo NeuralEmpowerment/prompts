@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const handleInit = require('./handleInit');
 const setupPrompts = require('./setupPrompts');
 
