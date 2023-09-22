@@ -1,0 +1,25 @@
+{
+  "name": "@neuralempowerment/prompts",
+  "version": "0.0.1",
+  "description": "Collection of prompts which can be easily added to a NodeJS repo for easy access with Cursor IDE.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "bin": {
+    "prompts": "./index.js"
+  },
+  "license": "GPL-3.0-or-later",
+  "keywords": [
+    "cli",
+    "prompts",
+    "gitignore"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeuralEmpowerment/neuralempowerment-prompts.git"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
